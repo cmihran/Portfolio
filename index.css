@@ -1,0 +1,74 @@
+body {
+    background-color: #f4f4f4;
+    font-size: 3em;
+    font-family: "TYPOGRAPH";
+    color: white;
+}
+
+a {
+    color: #5085FF;
+    font-family: "TYPOGRAPH";
+    font-weight: bold;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+}
+
+ul, li, nav {
+    margin: 0;
+    padding: 0;
+}
+
+a, nav {
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    color: #A3BFFE;
+    display: inline;
+    font-size: 40%;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+}
+
+#header {
+    border-bottom: 2px solid #c9c9c9;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+li:hover {
+    color: #CDDCFF;
+    cursor: pointer;
+}
+
+@font-face {
+  font-family: 'TYPOGRAPH-Bold';
+  src: url('fonts/TYPOGRAPH PRO Semi Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TYPOGRAPH';
+  src: url('fonts/TYPOGRAPH PRO Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
