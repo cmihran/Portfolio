@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Charlie Mihran</title>
-        <link href="index.css" type="text/css" rel="stylesheet" />
-    </head>
-    
-    <body>
+<?php 
+
+    function setHeader() { ?>
         <div class="container">
             <div id="header">
                 <a>Charlie Mihran</a>
@@ -17,12 +12,7 @@
                     </ul>
                 </nav>
             </div>
-            
-            <div id="main">
-                Bla de bla de blah. <br>
-                Bla de bla de blah. Bla de bla de blah. 
-            </div>
         </div>
-    </body>
-    
-</html>
+    <?php }
+
+?>

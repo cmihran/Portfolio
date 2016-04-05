@@ -1,12 +1,11 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #FBFBFB;
     font-size: 3em;
     font-family: "TYPOGRAPH";
-    color: white;
 }
 
 a {
-    color: #5085FF;
+    color: #007CE1;
     font-family: "TYPOGRAPH";
     font-weight: bold;
     float: left;
@@ -16,6 +15,12 @@ a {
 
 hr {
     clear: both;
+}
+
+#main {
+    font-size: 60%;
+    padding-top: 40px;
+    text-align: center;
 }
 
 .container {
@@ -38,7 +43,7 @@ ul {
 }
 
 li {
-    color: #A3BFFE;
+    color: #84a3e8;
     display: inline;
     font-size: 40%;
     text-transform: uppercase;
@@ -52,6 +57,7 @@ nav {
     border-bottom: 2px solid #c9c9c9;
     overflow: auto;
     margin-top: 20px;
+    padding-bottom: 5px;
 }
 
 li:hover {
