@@ -46,6 +46,14 @@ hr {
     height: 35px;
 }
 
+#PROX {
+    color: #C40002;
+}
+
+#CLICK {
+    color: #6C9D30;
+}
+
 nav ul, nav li, nav {
     margin: 0;
     padding: 0;
