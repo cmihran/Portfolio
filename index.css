@@ -1,10 +1,10 @@
 body {
-    background-color: #FBFBFB;
+    background-color: white;
     font-size: 3em;
     font-family: "TYPOGRAPH";
 }
 
-a {
+#header > a {
     color: #007CE1;
     font-family: "TYPOGRAPH";
     font-weight: bold;
@@ -23,7 +23,7 @@ hr {
 
 #main {
     font-size: 60%;
-    padding-top: 40px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -31,10 +31,19 @@ hr {
     width: 80%;
     overflow: auto;
     margin: auto;
+    max-width: 1000px;
 }
 
 #UW {
     color: #4B2E84;
+}
+
+#CS span {
+    color: #007CE1;
+}
+
+#CS img {
+    height: 35px;
 }
 
 nav ul, nav li, nav {
@@ -42,7 +51,7 @@ nav ul, nav li, nav {
     padding: 0;
 }
 
-a, nav {
+#header > a, nav {
     padding-top: 10px;
 }
 
@@ -54,7 +63,15 @@ nav li {
     display: inline;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: inherit;
+}
+
 nav li {
+    padding: 10px;
     color: #84a3e8;
     font-size: 40%;
     text-transform: uppercase;
@@ -64,6 +81,41 @@ nav {
     float: right;
 }
 
+#skills {
+    margin-bottom: 30px;
+}
+
+#skills .skill {
+    text-align: left;
+    background-color: #008dff;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 80%;
+    margin: 8px;
+}
+
+#skills .skill2 {
+    width: 80%; 
+}
+
+#skills .skill3 {
+    width: 70%;
+}
+
+#skills .skill4 {
+    width: 70%;
+}
+
+#skills .skill5 {
+    width: 50%;
+}
+
+nav #active {
+    background-color: #CDDCFF;
+    border-radius: 10px;
+}
+
 #header {
     border-bottom: 2px solid #c9c9c9;
     overflow: auto;
@@ -71,7 +123,7 @@ nav {
     padding-bottom: 5px;
 }
 
-nav li:hover {
+nav li:hover:not(#active) {
     color: #CDDCFF;
     cursor: pointer;
 }
@@ -90,45 +142,8 @@ nav li:hover {
   font-style: normal;
 }
 
-/** Timeline **/
+/* Timeline */
 
-/**#timeline {
-    position: relative;
-	display: block;
-    margin-left: 15%;
-	width: 4px;
-    background-color: #007CE1;
-}
-
-#timeline li {
-	display: inline-block;
-    width: 15000%;
-    margin-bottom: 20px;
-    font-size: 60%;
-}
-
-#timeline div {
-    float: right;
-}
-
-#timeline span {
-    margin-left: 20px;
-    float: left;
-}
-
-#timeline li::before {
-	content: "";
-	position: absolute;
-    left: -6px;
-	display: block;
-	width: 10px;
-	height: 10px;
-	border: 4px solid #007CE1;
-	border-radius: 10px;
-	background: #FBFBFB;
-}**/
-
-/* Experiences */
 #timeline {
     padding-left: 15px;
     margin-top: -1px;
@@ -140,15 +155,11 @@ nav li:hover {
     list-style: none;
 }
 
-
-/* BORDERS AND BULLETS */
-
-
 #timeline li {
     position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
     /* use padding-bottom instead of margin-bottom.*/ 
     margin-bottom: 0; /* This overrides previously specified margin-bottom */
-    padding-bottom: 2.5em;
+    padding-bottom: 1em;
 }
 
 #timeline li::after {
@@ -177,13 +188,12 @@ nav li:hover {
 }
 
 #timeline li:first-child::before {
-   /* first li's line */
-   top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+   top: 6px;
 }
 
 #timeline li:last-child::before {
     /* last li's line */
-   height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+   /*height: 6px; */
 }
 
 #timeline .date {
@@ -200,3 +210,11 @@ nav li:hover {
     border-radius: 10px;
 }
 
+#timeline .description {
+    text-align: left;
+    font-size: 70%;
+    width: 80%;
+    padding-left: 15%;
+    margin: 20px;
+    line-height: 25px;
+}
